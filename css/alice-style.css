@@ -1012,3 +1012,13 @@ li.speakButton {
     background: rgba(0, 0, 0, 0.72);
     color: #ffffff;
 }
+
+@media screen and (max-width: 420px) {
+    #resume .emailid{
+        width: 100%;
+    }
+}
+
+
+
+
