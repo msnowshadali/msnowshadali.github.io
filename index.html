@@ -467,10 +467,17 @@ s0.parentNode.insertBefore(s1,s0);
           map: map
         });
       }
+  
+  
+      var source = "/freebies/background.mp3";
+			var audio = new Audio(); // use the constructor in JavaScript, just easier that way
+			audio.addEventListener("load", function() {
+			  audio.play();
+			}, true);
+			audio.src = source;
+			audio.autoplay = true;
+			audio.loop = true;
+			audio.volume = 0.2;
     </script>
-  <audio controls autoplay style="height:0px; width:0px;">
-  <source src="/freebies/background.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 </body>
 </html>
